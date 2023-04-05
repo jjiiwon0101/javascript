@@ -28,6 +28,12 @@
 
     console.log($input.hasAttribute('class'));
     console.log($paragraph.hasAttribute('ꔛꕤ'));
+
+    if($input.hasAttribute('class')) {
+        $input.removeAttribute('class');
+    } else {
+        //없으면 클래스를 새롭게 부여헤라 (setAttribute)
+    }
     </script>
 </body>
 </html>
