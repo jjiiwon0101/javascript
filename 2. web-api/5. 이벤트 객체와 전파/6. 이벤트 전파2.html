@@ -63,11 +63,12 @@
             */
             //$li.classList.toggle('active', $li === e.target);
 
-            $li(li.classList.contains('active')) 
+            $li(li.classList.toggle('active', $li === e.target));
+            //if($li.classList.contains('active')) {
+                //$li.classList.remove('active');
+            //}
+            }
 
-            
-        }
-            
 
 
         //메세지 영역에는 이벤트가 발생된 과일 이름을 추가
@@ -94,7 +95,7 @@
         });
 
         //입력창 안에서 엔터 키를 입력하면 버튼 클릭과 동일한 효과 내기
-        $textBox.addEventListener('keydown', () => {
+        $textBox.addEventListener('keydown', (e) => {
             if(e.keyCode === 13) {
                 //click()은 요소를 직접 클릭한 것과 같은 효과를 줌.
                 //클릭 이벤트가 발생할 수 있도록 유도.
