@@ -21,10 +21,24 @@
         alert('당신의 점수: ' + point + '점');
 
         if(point >= 90) {
-            console.log('A+ 학점입니다.');
-        }else {
-            console.log('A0 학점입니다.')
+            if(point >= 95) {
+                alert('A+ 학점입니다.');
+            } else {
+                alert('A0 학점입니다.');
+            }
+        } else if(point >= 80) {
+            alret('B 학점입니다.');
         }
+         else if(point >= 80) {
+            alret('C 학점입니다.');
+        }
+         else if(point >= 80) {
+            alret('D 학점입니다.');
+        }
+        else {
+            alret('F 학점입니다.')
+        }
+
     
         
     </script>
