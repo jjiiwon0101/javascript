@@ -37,13 +37,21 @@
     const $ul = document.querySelectorAll('li img');
     const $result = document.querySelector('.result img');
 
+     //$ul.addEventListener('click', e => {
+        //if(!e.target.matches('ul > li > img')) {
+            //return;
+        //}
+        //$img.setAttruibute('src', e,target,src);
+     //})
      
     for(let i of [...$ul]) {
         i.onclick = function(e) {
-            $result.src = i.src;
-        }
+           $result.src = i.src;
+       }
     
-    }
+}
+
+    
 
 
 

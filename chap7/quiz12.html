@@ -76,6 +76,21 @@
             }
         });
 
+        const $to = document.querySelector('.toggle');
+        $to.onclick = function(e) {
+            if(!e.target.matches('.toggle > li')) {
+                return;
+            }
+            const $toggleList = document.querySelector('.toggle-menu');
+
+            for(let $ele of [...$toggleList]) {
+                $ele.classList.toggle('active', document.querySelector(e.target.dataset.id) === $ele.id);
+            }
+            //[...$toggleList].forEach($ele => $ele.classList.toggle('active', document.querySelector(e.target.dataset,id) === $ele.id));
+
+            //[...$toggleList].forEach()
+        }
+
        
 
         
